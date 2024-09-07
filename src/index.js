@@ -1,11 +1,12 @@
-import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { Toaster } from 'react-hot-toast';
+import HomePage from "./homePage";
 ReactDOM.render(
-    <>
-        <Toaster />,
-    <App></App>,
-    </>,
+    <div>
+    <App>
+    </App> 
+    <Toaster/>
+    </div>,
     document.getElementById("root")
 );

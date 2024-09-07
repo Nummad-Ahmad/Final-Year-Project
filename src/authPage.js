@@ -2,12 +2,15 @@ import { useState } from 'react';
 import style from './auth.module.css';
 import auth from './images/auth.png';
 import { toast } from 'react-hot-toast';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Auth() {
     const [isLogin, setLogin] = useState(true);
     const [forgotPassword, setForgotPassword] = useState(false);
-    function handleClick(){
-        toast.error('This feature is currently unavailable');
+    const navigate = useNavigate();
+    function handleClick() {
+        // navigate('/homepage');
+        toast.error('This feature is under development');
     }
     return (
         <div className={style.container}>
@@ -38,9 +41,9 @@ export default function Auth() {
                     {
                         isLogin &&
                             !forgotPassword ?
-                            <p onClick={() => setForgotPassword(!forgotPassword)}>Forgot password</p> :
+                            <p className={style.blueText} onClick={() => setForgotPassword(!forgotPassword)}>Forgot password</p> :
                             !isLogin ? null :
-                                <p onClick={() => setForgotPassword(!forgotPassword)}>Back to login</p>
+                                <p className={style.blueText} onClick={() => setForgotPassword(!forgotPassword)}>Back to login</p>
                     }
                     {
                         isLogin &&
@@ -48,7 +51,7 @@ export default function Auth() {
                             <buton onClick={handleClick} className={style.button}>
                                 Login
                             </buton> :
-                            !isLogin &&
+                            !isLogin && 
                                 !forgotPassword ?
                                 <buton onClick={handleClick} className={style.button}>
                                     Sign up
