@@ -1,9 +1,14 @@
 import { useState } from 'react';
 import style from './auth.module.css';
 import auth from './images/auth.png';
+import { toast } from 'react-hot-toast';
+
 export default function Auth() {
     const [isLogin, setLogin] = useState(true);
     const [forgotPassword, setForgotPassword] = useState(false);
+    function handleClick(){
+        toast.error('This feature is currently unavailable');
+    }
     return (
         <div className={style.container}>
             <div className={style.textContainer}>
@@ -40,12 +45,12 @@ export default function Auth() {
                     {
                         isLogin &&
                             !forgotPassword ?
-                            <buton className={style.button}>
+                            <buton onClick={handleClick} className={style.button}>
                                 Login
                             </buton> :
                             !isLogin &&
                                 !forgotPassword ?
-                                <buton className={style.button}>
+                                <buton onClick={handleClick} className={style.button}>
                                     Sign up
                                 </buton> :
                                 <buton className={style.button}>
