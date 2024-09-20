@@ -30,10 +30,6 @@ export default function Auth() {
     function handlePassword(event) {
         setPassword(event.target.value);
     }
-    function handlePassword(event) {
-        console.log(event.target.value);
-        setForgotPassword(event.target.value);
-    }
     return (
         <div className={style.container}>
             <div className={style.textContainer}>
@@ -50,7 +46,7 @@ export default function Auth() {
                     {
                         !forgotPassword &&
                         <div className={style.togglebuttonDiv}>
-                            <button onClick={() => setLogin(true)} className={isLogin ? style.activeButton : style.toggleButtons}>
+                            <button onClick={() => {setLogin(true)}} className={isLogin ? style.activeButton : style.toggleButtons}>
                                 Login
                             </button>
                             <button onClick={() => setLogin(false)} className={!isLogin ? style.activeButton : style.toggleButtons}>
@@ -59,7 +55,7 @@ export default function Auth() {
                         </div>
                     }
                     <input onChange={handleEmail} placeholder='Enter email' />
-                    <input onChange={handlePassword} placeholder='Enter password' />
+                    <input onChange={handlePassword} type='password' placeholder='Enter password' />
                     {
                         isLogin &&
                             !forgotPassword ?
