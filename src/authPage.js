@@ -12,6 +12,8 @@ export default function Auth() {
     const navigate = useNavigate();
     function handleClick() {
         toast.error('This feature is under development');
+        console.log('email', email);
+        console.log('password', password);
         // if(!email){
         //     toast.error('Email is required');
         // }else if(!email.endsWith('@gmail.com')){
@@ -34,6 +36,7 @@ export default function Auth() {
         <div className={style.container}>
             <div className={style.textContainer}>
                 <div className={style.formDiv}>
+                <h1 className={style.projectName}>WellnessWiz</h1>
                     {
                         isLogin &&
                             !forgotPassword ?
