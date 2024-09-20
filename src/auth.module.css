@@ -127,4 +127,8 @@ h2{
         width: 100%;
         background-color: rgba(227, 243, 255, 1);
     }
+    .formDiv{
+        margin-top: 40px;
+        margin-bottom: auto;
+    }
   }
