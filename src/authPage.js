@@ -1,16 +1,38 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import style from './auth.module.css';
-import auth from './images/auth.png';
+import auth from './images/dr.png';
 import { toast } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function Auth() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const [isLogin, setLogin] = useState(true);
     const [forgotPassword, setForgotPassword] = useState(false);
     const navigate = useNavigate();
     function handleClick() {
-        // navigate('/homepage');
         toast.error('This feature is under development');
+        // if(!email){
+        //     toast.error('Email is required');
+        // }else if(!email.endsWith('@gmail.com')){
+        //     toast.error('invalid email');
+        // }else if(!password){
+        //     toast.error('password is required');
+        // }else if(password.length < 8){
+        //     toast.error('minimum password length is 8');
+        // }else{
+            // navigate('/homepage');
+        // }
+    }
+    const handleEmail = (event) => {
+        setEmail(event.target.value);
+    }
+    function handlePassword(event) {
+        setPassword(event.target.value);
+    }
+    function handlePassword(event) {
+        console.log(event.target.value);
+        setForgotPassword(event.target.value);
     }
     return (
         <div className={style.container}>
@@ -36,8 +58,8 @@ export default function Auth() {
                             </button>
                         </div>
                     }
-                    <input placeholder='Enter email' />
-                    <input placeholder='Enter password' />
+                    <input onChange={handleEmail} placeholder='Enter email' />
+                    <input onChange={handlePassword} placeholder='Enter password' />
                     {
                         isLogin &&
                             !forgotPassword ?
@@ -51,7 +73,7 @@ export default function Auth() {
                             <buton onClick={handleClick} className={style.button}>
                                 Login
                             </buton> :
-                            !isLogin && 
+                            !isLogin &&
                                 !forgotPassword ?
                                 <buton onClick={handleClick} className={style.button}>
                                     Sign up
@@ -63,7 +85,7 @@ export default function Auth() {
                 </div>
             </div>
             <div className={style.imageContainer}>
-                <img src={auth} alt=''></img>
+                <img className={style.img} src={auth} alt='' height={500}></img>
             </div>
         </div>
     );

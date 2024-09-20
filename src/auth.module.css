@@ -18,12 +18,13 @@
 .formDiv{
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 65%;
+    min-width: 300px;
     gap: 15px;
     border: 1px solid white;
     background-color: white;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     box-shadow: 10px 10px 15px rgb(200, 200, 200);
 }
@@ -32,6 +33,7 @@
     justify-content: center;
     width: 50%;
     background-color: rgba(227, 243, 255, 1);
+    align-items: center;
 }
 input{
     border: 1px solid rgba(211, 211, 211, 1);
@@ -80,7 +82,7 @@ h2{
     border: none;
     background: -webkit-linear-gradient(left,#003366,#004080,#0059b3
     , #0073e6);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
     color: white;
     display: flex;
@@ -88,10 +90,32 @@ h2{
     cursor: pointer;
 }
 @media (max-width: 900px) {
+    /* .container{
+        background-color: white;
+    } */
+    .img{
+        height: 75%;
+    }
+    .imageContainer{
+        width: 45%;
+    }
+    .textContainer{
+        width: 50%;
+        /* background-color: rgb(240, 240, 240); */
+    }
+    .formDiv{
+        border: none;
+        /* background-color: rgb(240, 240, 240); */
+        box-shadow: none;
+        padding: 10px;
+    }
+  }
+  @media (max-width: 650px){
     .imageContainer{
         display: none;
     }
     .textContainer{
         width: 100%;
+        background-color: rgba(227, 243, 255, 1);
     }
   }
