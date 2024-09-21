@@ -4,7 +4,7 @@
     width: 100vw;
     justify-content: space-between;
     background-color: rgba(227, 243, 255, 1);
-    overflow-y: hidden;
+/*     overflow-y: hidden; */
     box-sizing: border-box;
 }
 img{
