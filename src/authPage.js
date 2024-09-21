@@ -37,7 +37,7 @@ export default function Auth() {
         <div className={style.container}>
             <div className={style.textContainer}>
                 <div className={style.formDiv}>
-                <img src={logo} height={150} width={150}></img>
+                <img src={logo} height={150} ></img>
                     {
                         isLogin &&
                             !forgotPassword ?
