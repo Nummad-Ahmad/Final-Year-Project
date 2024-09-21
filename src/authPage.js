@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import style from './auth.module.css';
 import auth from './images/dr.png';
+import logo from './images/logo4.png';
 import { toast } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -36,7 +37,7 @@ export default function Auth() {
         <div className={style.container}>
             <div className={style.textContainer}>
                 <div className={style.formDiv}>
-                <h1 className={style.projectName}>WellnessWiz</h1>
+                <img src={logo} height={150} width={150}></img>
                     {
                         isLogin &&
                             !forgotPassword ?
