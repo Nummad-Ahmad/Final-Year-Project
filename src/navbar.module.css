@@ -36,7 +36,7 @@
         padding: 0px 10px;   
     }
     .navbarlogo{
-        padding-right: 10px; 
+        display: none;
     }
     .btn{
         display: none;
