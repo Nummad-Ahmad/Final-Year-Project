@@ -1,5 +1,7 @@
 .topnavbar{
+    min-height: 70px;
     height: 12%;
+    max-height: 100px;
     width: 100%;
     /* background-color: rgb(156, 212, 255); */
     background: -webkit-linear-gradient(right, #003366, #004080, #0059b3, #0073e6);
