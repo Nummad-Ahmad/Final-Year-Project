@@ -1,9 +1,11 @@
-.container{
+.container {
     display: flex;
     height: 100vh;
     width: 100vw;
     justify-content: space-between;
-    background-color: rgba(227, 243, 255, 1);
+    /* background-color: rgba(227, 243, 255, 1); */
+    
+    background-color: rgb(156, 212, 255);
 /*     overflow-y: hidden; */
     box-sizing: border-box;
 }
@@ -11,8 +13,20 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    /* background-color: rgba(227, 243, 255, 1); */
+    /* background-color: rgb(156, 212, 255); */
+    overflow-y: hidden;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
-.textContainer{
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textContainer {
     display: flex;
     width: 50%;
     margin: auto auto;
@@ -21,7 +35,8 @@ img{
     box-sizing: border-box;
     align-items: center;
 }
-.formDiv{
+
+.formDiv {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -34,27 +49,32 @@ img{
     box-sizing: border-box;
     box-shadow: none;
 }
-.imageContainer{
+
+.imageContainer {
     display: flex;
     justify-content: center;
     width: 50%;
-    background-color: rgba(227, 243, 255, 1);
+    /* background-color: rgba(227, 243, 255, 1); */
+    background-color: rgb(156, 212, 255);
     align-items: center;
 }
-input{
+
+input {
     border: 1px solid rgba(211, 211, 211, 1);
     padding: 10px;
     border-radius: 5px;
     outline: none;
 }
-h2{
+
+h2 {
     margin: 0px;
     text-align: center;
     margin-bottom: 10px;
     font-weight: 600;
     font-size: 23px;
 }
-.togglebuttonDiv{
+
+.togglebuttonDiv {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -62,16 +82,17 @@ h2{
     border-radius: 5px;
     margin-bottom: 15px;
 }
-.toggleButtons{
+
+.toggleButtons {
     padding: 10px;
     width: 50%;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-.activeButton{
-    background: -webkit-linear-gradient(left,#003366,#004080,#0059b3
-    , #0073e6);
+
+.activeButton {
+    background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
     padding: 10px;
     width: 50%;
     border: none;
@@ -79,17 +100,18 @@ h2{
     color: white;
     cursor: pointer;
 }
-.blueText{
+
+.blueText {
     margin: 5px 0px;
     text-align: left;
     color: rgb(26, 117, 215);
     font-size: 13px;
     cursor: pointer;
 }
-.button{
+
+.button {
     border: none;
-    background: -webkit-linear-gradient(left,#003366,#004080,#0059b3
-    , #0073e6);
+    background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
     border-radius: 10px;
     padding: 10px;
     color: white;
@@ -97,37 +119,50 @@ h2{
     justify-content: center;
     cursor: pointer;
 }
-@media (max-width: 900px) {
+
+@media (max-width: 920px) {
+
     /* .container{
         background-color: white;
     } */
-    .img{
+    .img {
         height: 75%;
     }
-    .imageContainer{
+
+    .imageContainer {
         width: 45%;
     }
-    .textContainer{
+
+    .textContainer {
         width: 50%;
         /* background-color: rgb(240, 240, 240); */
     }
-    .formDiv{
+
+    .formDiv {
         border: none;
         /* background-color: rgb(240, 240, 240); */
         box-shadow: none;
         padding: 10px;
     }
-  }
-  @media (max-width: 650px){
-    .imageContainer{
+}
+
+@media (max-width: 650px) {
+    .imageContainer {
         display: none;
     }
-    .textContainer{
+
+    .textContainer {
         width: 100%;
-        background-color: rgba(227, 243, 255, 1);
+        /* background-color: rgba(227, 243, 255, 1); */
+        background-color: rgb(156, 212, 255);
     }
     .formDiv{
         margin-top: 40px;
         margin-bottom: auto;
     }
-  }
+
+    .formDiv {
+        margin-top: 40px;
+        margin-bottom: auto;
+    }
+}
