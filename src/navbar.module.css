@@ -28,3 +28,15 @@
     background-color: #003366;
     cursor: pointer;
 }
+
+@media (max-width: 600px){
+    .topnavbar{
+        padding: 0px 10px;   
+    }
+    .navbarlogo{
+        padding-right: 10px; 
+    }
+    .btn{
+        display: none;
+    }
+}
