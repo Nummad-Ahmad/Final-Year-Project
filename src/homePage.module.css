@@ -1,4 +1,63 @@
 .homepage{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.imgandtext{
+    display: flex;
+    align-items: center;
+}
+.text{
+    font-size: 50px;
+    font-family: Dosis;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-weight: 700;    
+    color: rgba(1, 22, 50, 1);
+}
+.mototaglinediv{
+    width: 50%;
+    margin: auto;
+    margin: 0px;
+    width: 50%;
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+.tagline{
+    margin: 0px;
+    font-size: 16px;
+}
+.img{
+    height: 80%;
+    background-color: white;
+}
+
+@media (max-width: 900px) {
+    .img{
+        height: 60%;
+    }
+    .text{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .imgandtext{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 600px;
+    }
+    .text{
+        text-align: center;
+        margin: 20px 0px;
+    }
+    .img{
+        display: none;
+    }
+    .mototaglinediv{
+        width: 470px;
+    }
+    .tagline{
+        text-align: center;
+    }
 }
