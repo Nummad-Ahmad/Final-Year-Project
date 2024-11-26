@@ -1,0 +1,30 @@
+.topnavbar{
+    height: 12%;
+    width: 100%;
+    /* background-color: rgb(156, 212, 255); */
+    background: -webkit-linear-gradient(right, #003366, #004080, #0059b3, #0073e6);
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    /* color: white; */
+    justify-content: space-between;
+}
+.h3{
+    margin: 0px;
+    font-size: 25px;
+    font-weight:600;
+    font-family: cursive;
+}
+.navbarlogo{
+    margin: 0px;
+    padding-right: 10px;
+}
+.btn{
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #003366;
+    cursor: pointer;
+}
