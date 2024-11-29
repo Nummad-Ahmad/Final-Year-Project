@@ -43,19 +43,19 @@ export default function () {
                             <IoMdClose size={20} color='black' />
                         </div>
                         <ul>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px',cursor: 'pointer' }}>
+                            <div style={{borderBottom: '1px solid black', display: 'flex', alignItems: 'center', gap: '10px',cursor: 'pointer' }}>
                                 <IoIosInformationCircleOutline size={20} color='black' />
                                 <li><a>About</a></li>
                             </div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px',cursor: 'pointer' }}>
+                            <div style={{borderBottom: '1px solid black', display: 'flex', alignItems: 'center', gap: '10px',cursor: 'pointer' }}>
                                 <VscTools size={20} color='black' />
                                 <li><a>Services</a></li>
                             </div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px',cursor: 'pointer' }}>
+                            <div style={{borderBottom: '1px solid black', display: 'flex', alignItems: 'center', gap: '10px',cursor: 'pointer' }}>
                                 <MdOutlineLightbulb size={20} color='black' />
                                 <li><a>How it works</a></li>
                             </div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px',cursor: 'pointer' }}>
+                            <div style={{borderBottom: '1px solid black', display: 'flex', alignItems: 'center', gap: '10px',cursor: 'pointer' }}>
                                 <MdOutlineLightbulb size={20} color='black' />
                                 <li><a>How it works</a></li>
                             </div>
