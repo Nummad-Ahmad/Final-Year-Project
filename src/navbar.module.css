@@ -3,7 +3,8 @@
     height: 12%;
     max-height: 100px;
     width: 100%;
-    background: -webkit-linear-gradient(right, #003366, #004080, #0059b3, #0073e6);
+    /* background: -webkit-linear-gradient(right, #003366, #004080, #0059b3, #0073e6); */
+    background-color: #004080;
     display: flex;
     align-items: center;
     padding: 0px 40px;
@@ -50,6 +51,7 @@
   .sidemenu ul {
     list-style: none;
     padding: 0;
+    width: 100%;
   }
   .sidemenu ul li {
     margin: 20px 0;
