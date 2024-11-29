@@ -1,6 +1,6 @@
 import style from './navbar.module.css';
 import Logo from './images/logo4.png';
-import { MdMenu } from "react-icons/md";
+import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { VscTools } from "react-icons/vsc";
@@ -33,28 +33,29 @@ export default function () {
             </div>
             <div className={style.menu}>
                 <div onClick={() => { setClicked(true) }}>
-                    <MdMenu color='white' />
+                    <AiOutlineMenu size={20} color='white' />
                 </div>
+            </div>
                 {
                     clicked &&
                     <div className={style.sidemenu}>
-                        <div onClick={() => { setClicked(false) }}>
+                        <div style={{cursor: 'pointer'}} onClick={() => { setClicked(false) }}>
                             <IoMdClose size={20} color='black' />
                         </div>
                         <ul>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px',cursor: 'pointer' }}>
                                 <IoIosInformationCircleOutline size={20} color='black' />
                                 <li><a>About</a></li>
                             </div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px',cursor: 'pointer' }}>
                                 <VscTools size={20} color='black' />
                                 <li><a>Services</a></li>
                             </div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px',cursor: 'pointer' }}>
                                 <MdOutlineLightbulb size={20} color='black' />
                                 <li><a>How it works</a></li>
                             </div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px',cursor: 'pointer' }}>
                                 <MdOutlineLightbulb size={20} color='black' />
                                 <li><a>How it works</a></li>
                             </div>
@@ -62,6 +63,5 @@ export default function () {
                     </div>
                 }
             </div>
-        </div>
     );
 }
