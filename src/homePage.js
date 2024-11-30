@@ -1,5 +1,5 @@
 import style from './homePage.module.css';
-// import SideBar from './sideBar';
+import { BsChatDots } from "react-icons/bs";
 import Dr from './images/dr.png';
 import Blackheads from './images/blackheads.jpeg';
 import Cysts from './images/cysts.jpeg';
@@ -20,6 +20,9 @@ export default function HomePage() {
                     <p className={style.tagline} >Personalized solutions for every skin type, backed by advanced detection and prevention tools</p>
                 </div>
                 <img className={style.img} src={Dr}></img>
+            </div>
+            <div className={style.chat}>
+                <BsChatDots size={20} color='white'/>
             </div>
             <p className={style.treatments}>
                 Treatments we offer
