@@ -5,6 +5,7 @@ import { IoMdClose } from "react-icons/io";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { VscTools } from "react-icons/vsc";
 import { MdOutlineLightbulb } from "react-icons/md";
+import { GiMedicines } from "react-icons/gi";
 import { useState } from 'react';
 export default function () {
     const [clicked, setClicked] = useState(false);
@@ -56,8 +57,8 @@ export default function () {
                                 <li><a>How it works</a></li>
                             </div>
                             <div style={{borderBottom: '1px solid black', display: 'flex', alignItems: 'center', gap: '10px',cursor: 'pointer' }}>
-                                <MdOutlineLightbulb size={20} color='black' />
-                                <li><a>How it works</a></li>
+                                <GiMedicines size={20} color='black' />
+                                <li><a>Acne types</a></li>
                             </div>
                         </ul>
                     </div>
