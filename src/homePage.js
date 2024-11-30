@@ -56,23 +56,21 @@ export default function HomePage() {
                 </div>
             </div>
             <div className={style.lightbluecontainer}>
-                <div style={{display: 'flex', gap: '50px'}}>
+                <div className={style.leftrightcontainer}>
                     <div className={style.leftdiv}>
                         <p>Combining AI and healthcare insights to assist users in their skincare free of cost
                         </p>
-                        <button>Read more</button>
                     </div>
                     <div className={style.rightdiv}>
                         <p>Using advanced AI and healthcare expertise, our chatbot
-                            delivers personalized recommendations to address unique skin concerns.
-                            It empowers users with insights into skincare routines, medications
-                            and preventive care tailored to their needs.</p>
+                            delivers personalized recommendations to address unique skin concerns.</p>
+                        <button>Read more</button>
                     </div>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                    <img height={230} src={Doctormeeting1}/>
-                    <img height={230} src={Doctormeeting2}/>
-                    <img height={230} src={Doctormeeting3}/>
+                    <img className={style.meetingimgs} src={Doctormeeting1}/>
+                    <img className={style.meetingimgs} src={Doctormeeting2}/>
+                    <img className={style.meetingimgs} src={Doctormeeting3}/>
                 </div>
             </div>
         </div>
