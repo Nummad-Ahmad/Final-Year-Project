@@ -166,17 +166,11 @@
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    /* margin-top: 15px; */
+    margin-top: 15px;
 }
 
 .meetingimgs{
     width: 30%;
-}
-
-@media((max-width:800px) and (min-width:1100px)){
-    .rightdiv button{
-        margin-top: 15px;
-    }
 }
 
 @media (max-width: 900px) {
@@ -238,6 +232,6 @@
         width: 100%;        
     }
     .meetingimgs{
-        width: 25%;
+        width: 27%;
     }
 }
