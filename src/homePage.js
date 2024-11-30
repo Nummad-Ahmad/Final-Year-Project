@@ -7,7 +7,9 @@ import Whiteheads from './images/whiteheads.jpeg';
 import Nodules from './images/nodules.jpeg';
 import Pustules from './images/pustules.jpeg';
 import Papules from './images/papules.jpeg';
-
+import Doctormeeting1 from './images/doctormeeting1.jpeg';
+import Doctormeeting2 from './images/doctormeeting2.jpeg';
+import Doctormeeting3 from './images/doctormeeting3.jpeg';
 import Navbar from './navbar';
 export default function HomePage() {
     return (
@@ -22,7 +24,7 @@ export default function HomePage() {
                 <img className={style.img} src={Dr}></img>
             </div>
             <div className={style.chat}>
-                <BsChatDots size={20} color='white'/>
+                <BsChatDots size={20} color='white' />
             </div>
             <p className={style.treatments}>
                 Treatments we offer
@@ -51,6 +53,26 @@ export default function HomePage() {
                 <div className={style.diseasebox}>
                     <img className={style.diseaseimg} src={Papules} />
                     <span className={style.diseaseboxtext}>Papules</span>
+                </div>
+            </div>
+            <div className={style.lightbluecontainer}>
+                <div style={{display: 'flex', gap: '50px'}}>
+                    <div className={style.leftdiv}>
+                        <p>Combining AI and healthcare insights to assist users in their skincare free of cost
+                        </p>
+                        <button>Read more</button>
+                    </div>
+                    <div className={style.rightdiv}>
+                        <p>Using advanced AI and healthcare expertise, our chatbot
+                            delivers personalized recommendations to address unique skin concerns.
+                            It empowers users with insights into skincare routines, medications
+                            and preventive care tailored to their needs.</p>
+                    </div>
+                </div>
+                <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                    <img height={230} src={Doctormeeting1}/>
+                    <img height={230} src={Doctormeeting2}/>
+                    <img height={230} src={Doctormeeting3}/>
                 </div>
             </div>
         </div>
