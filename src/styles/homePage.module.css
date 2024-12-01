@@ -285,7 +285,7 @@
         width: 100%;        
     }
     .meetingimgs{
-        width: 27%;
+        width: 30%;
     }
     .advantagesdiv{
         grid-template-columns: repeat(1, 1fr);
