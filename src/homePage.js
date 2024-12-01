@@ -86,16 +86,6 @@ export default function HomePage() {
                 Why choose us?
             </p>
             <div className={style.advantagesdiv}>
-            <div className={style.advantage} style={{ background: 'rgb(212, 232, 255)' }}>
-                    <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-                        <div className={style.icondiv}>
-                            <MdAccessTime size={20} color='rgb(212, 232, 255)' />
-                        </div>
-                        <p style={{ fontWeight: "bold", fontSize: '18px' }}>24/7 Availability</p>
-                    </div>
-                    <div className={style.whiteline}></div>
-                    <p>Available at any time, allowing users to get help without waiting for clinic hours.</p>
-                </div>
                 <div className={style.advantage} style={{ background: 'rgb(212, 232, 255)' }}>
                     <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                         <div className={style.icondiv}>
@@ -109,6 +99,16 @@ export default function HomePage() {
                 <div className={style.advantage} style={{ background: 'rgb(212, 232, 255)' }}>
                     <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                         <div className={style.icondiv}>
+                            <MdAccessTime size={20} color='rgb(212, 232, 255)' />
+                        </div>
+                        <p style={{ fontWeight: "bold", fontSize: '18px' }}>24/4 Availability</p>
+                    </div>
+                    <div className={style.whiteline}></div>
+                    <p>Available 24/7, allowing users to get help without waiting for clinic hours.</p> 
+                </div>
+                <div className={style.advantage} style={{ background: 'rgb(212, 232, 255)' }}>
+                    <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+                        <div className={style.icondiv}>
                             <IoAccessibility size={20} color='rgb(212, 232, 255)' />
                         </div>
                         <p style={{ fontWeight: "bold", fontSize: '18px' }}>Accessibility</p>
@@ -116,7 +116,7 @@ export default function HomePage() {
                     <div className={style.whiteline}></div>
                     <p>Access healthcare advice from homes without visiting hospital.</p>
                 </div>
-                <div className={style.advantagehidden} style={{ background: 'rgb(212, 232, 255)' }}>
+                <div className={style.advantage} style={{ background: 'rgb(212, 232, 255)' }}>
                     <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                         <div className={style.icondiv}>
                             <GrSecure size={20} color='rgb(212, 232, 255)' />
@@ -130,3 +130,6 @@ export default function HomePage() {
         </div>
     );
 }
+
+{/* */}
+{/* <p style={{ fontWeight: "bold", fontSize: '18px' }}>24/7 Availability</p> */}
