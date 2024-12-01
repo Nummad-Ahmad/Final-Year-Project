@@ -11,6 +11,11 @@ import Doctormeeting1 from './images/doctormeeting1.jpeg';
 import Doctormeeting2 from './images/doctormeeting2.jpeg';
 import Doctormeeting3 from './images/doctormeeting3.jpeg';
 import Navbar from './navbar';
+import { MdAccessTime } from "react-icons/md";
+import { FaSackDollar } from "react-icons/fa6";
+import { IoAccessibility } from "react-icons/io5";
+import { GrSecure } from "react-icons/gr";
+
 export default function HomePage() {
     return (
         <div className={style.homepage}>
@@ -19,7 +24,11 @@ export default function HomePage() {
             <div className={style.imgandtext}>
                 <div className={style.mototaglinediv}>
                     <p className={style.text}>Your Personalized Companion for Smarter Acne Detection</p>
-                    <p className={style.tagline} >Personalized solutions for every skin type, backed by advanced detection and prevention tools</p>
+                    <p className={style.tagline} >Personalized solutions for every skin type, backed
+                        by advanced detection and prevention tools. Using advanced AI and healthcare expertise,
+                        our chatbot delivers personalized recommendations to address unique skin concerns. Detect
+                        your acne type to get started.
+                    </p>
                 </div>
                 <img className={style.img} src={Dr}></img>
             </div>
@@ -27,7 +36,7 @@ export default function HomePage() {
                 <BsChatDots size={20} color='white' />
             </div>
             <p className={style.treatments}>
-                Treatments we offer
+                Types of Acne
             </p>
             <div className={style.diseasecontainer}>
                 <div className={style.diseasebox}>
@@ -67,10 +76,55 @@ export default function HomePage() {
                         <button>Read more</button>
                     </div>
                 </div>
-                <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                    <img className={style.meetingimgs} src={Doctormeeting1}/>
-                    <img className={style.meetingimgs} src={Doctormeeting2}/>
-                    <img className={style.meetingimgs} src={Doctormeeting3}/>
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <img className={style.meetingimgs} src={Doctormeeting1} />
+                    <img className={style.meetingimgs} src={Doctormeeting2} />
+                    <img className={style.meetingimgs} src={Doctormeeting3} />
+                </div>
+            </div>
+            <p className={style.whychooseus}>
+                Why choose us?
+            </p>
+            <div className={style.advantagesdiv}>
+            <div className={style.advantage} style={{ background: 'rgb(212, 232, 255)' }}>
+                    <div style={{display: 'flex', gap: '20px', alignItems: 'center'}}>
+                    <div className={style.icondiv}>
+                        <MdAccessTime size={20} color='rgb(212, 232, 255)' />
+                    </div>
+                    <p style={{ fontWeight: "bold", fontSize: '18px' }}>24/7 Availability</p>
+                    </div>
+                    <div className={style.whiteline}></div>
+                    <p>Available at any time, allowing users to get help without waiting for clinic hours.</p>
+                </div>
+                <div className={style.advantage} style={{ background: 'rgb(212, 232, 255)' }}>
+                    <div style={{display: 'flex', gap: '20px', alignItems: 'center'}}>
+                    <div className={style.icondiv}>
+                        <FaSackDollar size={20} color='rgb(212, 232, 255)' />
+                    </div>
+                    <p style={{ fontWeight: "bold", fontSize: '18px' }}>Cost affective</p>
+                    </div>
+                    <div className={style.whiteline}></div>
+                    <p>Eliminates transportation, hospital and consultation charges.</p>
+                </div>
+                <div className={style.advantage} style={{ background: 'rgb(212, 232, 255)' }}>
+                    <div style={{display: 'flex', gap: '20px', alignItems: 'center'}}>
+                    <div className={style.icondiv}>
+                        <IoAccessibility size={20} color='rgb(212, 232, 255)' />
+                    </div>
+                    <p style={{ fontWeight: "bold", fontSize: '18px' }}>Accessibility</p>
+                    </div>
+                    <div className={style.whiteline}></div>
+                    <p>Access healthcare advice from homes without visiting hospital.</p>
+                </div>
+                <div className={style.advantagehidden} style={{ background: 'rgb(212, 232, 255)' }}>
+                    <div style={{display: 'flex', gap: '20px', alignItems: 'center'}}>
+                    <div className={style.icondiv}>
+                        <GrSecure size={20} color='rgb(212, 232, 255)' />
+                    </div>
+                    <p style={{ fontWeight: "bold", fontSize: '18px' }}>Privacy</p>
+                    </div>
+                    <div className={style.whiteline}></div>
+                    <p>Tailored to individual concerns while maintaining user anonymity.</p>
                 </div>
             </div>
         </div>
